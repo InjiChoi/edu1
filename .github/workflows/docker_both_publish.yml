@@ -43,7 +43,7 @@ jobs:
         uses: docker/metadata-action@98669ae865ea3cffbcbaa878cf57c20bbf1c6c38
         with:
           images: 
-            shclub/edu1
+            change1212/edu1
             ghcr.io/${{ github.repository }}
       
       - name: Build and push Docker images
@@ -51,6 +51,6 @@ jobs:
         with:
           context: .
           push: true
-          tags: shclub/edu1
+          tags: change1212/edu1
       #${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
