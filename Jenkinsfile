@@ -3,14 +3,14 @@ properties([pipelineTriggers([githubPush()])])
 pipeline {
     environment {
         // Global 변수 선언
-        dockerRepo = "InjiChoi/edu1"
+        dockerRepo = "change1212/edu1"
         dockerCredentials = 'docker_ci_test'
         dockerImageVersioned = ""
         dockerImageLatest = ""
     }
 
     agent any
-
+https://github.com/InjiChoi/edu1/blob/master/Jenkinsfile
     stages {
         /* checkout repo */
         stage('Checkout SCM') {
